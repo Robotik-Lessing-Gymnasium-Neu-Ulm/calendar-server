@@ -1,0 +1,24 @@
+server:
+  url: example.com
+  ip: 0.0.0.0
+  port: 8080
+
+# Parameters for the postgres database
+database:
+  host: 127.0.0.1
+  port: 9920               
+  user: calendar
+  password: calendar
+  dbname: calendar_db
+  sslmode: disabled
+  timezone: Europe/Berlin
+
+
+# Define alle your different users. 
+# Non Admin users can only view events, admin users can create, modify and delete events
+# This section is only used for initial creation of the admin user and viewing their app passwords. 
+# All furture accounts can be created with another admin account
+initialadmin:
+  enabled: true
+  token: djfeg-lngwj-mhmdk-bcmxi
+  admin: true
